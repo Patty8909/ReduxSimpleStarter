@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { render } from 'react-dom';
 
 const App = () => (
   <div>
@@ -33,10 +34,10 @@ const hobbies = [
   { id: 4, text: 'Cocinar'},
 ]
 
-const ListaHobbies = () => (
+const Hobbies = () => (
   <ul>
     {hobbies.map(hobbie =>
-      <Todo
+      <ListaHobbies
         key={hobbie.id}
         {...hobbie}
       />
